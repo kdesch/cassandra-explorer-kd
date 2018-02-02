@@ -2,6 +2,9 @@ var express = require('express');
 var router = express.Router();
 var cassandra = require('cassandra-driver');
 var config = require('../config')
+var util = require('util');
+
+console.log(util.inspect(config));
 
 var client = new cassandra.Client(config.cassandra);
 
