@@ -1,5 +1,5 @@
 var config = {};
 config.cassandra = {};
-config.cassandra.contactPoints = ['cassandra.db-lb.svc'];
-config.cassandra.keyspace = 'system';
+config.cassandra.contactPoints = ['cassandra-db-lb.lb-cnap.bmwgroup.net'];
+config.cassandra.keyspace = 'animals';
 module.exports = config;
